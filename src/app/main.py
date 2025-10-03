@@ -21,6 +21,7 @@ async def run_batch_on_startup():
     On startup, read questions.json from data folder,
     query all personas, and write results to output.json.
     """
+    
     data_dir = Path(__file__).resolve().parents[1] / "data"
     questions_file = data_dir / "questions.json"
     output_file = data_dir / "output.json"
@@ -32,6 +33,7 @@ async def run_batch_on_startup():
     questions = json.loads(questions_file.read_text())
 
     all_results = []
+    
     for q in questions:
         q_text = q["text"]
         results = await query_with_personas(q_text)

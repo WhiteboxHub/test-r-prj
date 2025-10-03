@@ -1,10 +1,11 @@
 from __future__ import annotations
 from typing import Dict, Any, Optional
-from clients.nppes_client import NPPESClient
-from clients.cms_physician_compare_client import CMSPhysicianCompareClient
-from clients.hrsa_client import HRSAClient
-from clients.medscape_client import MedscapeClient
+from distributions_extractor.clients.nppes_client import NPPESClient
+from distributions_extractor.clients.cms_physician_compare_client import CMSPhysicianCompareClient
+from distributions_extractor.clients.hrsa_client import HRSAClient
+from distributions_extractor.clients.medscape_client import MedscapeClient
 from requests import HTTPError
+import json
 class PulmonologistDistributionBuilder:
     def __init__(self, nppes: NPPESClient, cms: CMSPhysicianCompareClient, hrsa: HRSAClient, medscape: MedscapeClient):
         self.nppes = nppes
@@ -31,6 +32,7 @@ class PulmonologistDistributionBuilder:
             "nppes_providers": nppes_data.get("result_count", 0),
         }
     }
+
         # return {
         #     "demographics": {
         #         "gender": medscape_data["gender_split"],
@@ -43,4 +45,8 @@ class PulmonologistDistributionBuilder:
         #         "urban_vs_rural": hrsa_data.get("urban_rural_split", {"urban": 0.8, "rural": 0.2})
         #     }
         # }
-    
+          
+
+def load_population_distributions():
+    distribuion_data = json.loads('sample_distributions.json')
+    return distribuion_data
