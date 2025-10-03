@@ -1,0 +1,12 @@
+fastapi
+uvicorn[standard]
+pydantic
+numpy
+scipy
+pandas
+httpx
+requests
+python-dotenv
+openai
+bert-score
+torch

@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "question": "What is your typical first-line therapy for newly diagnosed moderate COPD?",
+    "results": [
+      {"persona_id": "pulmonologist_1", "response": "I usually start with a LAMA..."},
+      {"persona_id": "pulmonologist_2", "response": "I prefer LABA/LAMA combination..."}
+    ]
+  },
+  {
+    "id": 2,
+    "question": "How often do you refer patients to pulmonary rehab?",
+    "results": [
+      {"persona_id": "pulmonologist_1", "response": "Every eligible patient..."},
+      {"persona_id": "pulmonologist_2", "response": "Only severe cases..."}
+    ]
+  }
+]
