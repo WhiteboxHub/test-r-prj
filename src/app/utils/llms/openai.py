@@ -4,8 +4,8 @@ from typing import List
 
 class OpenAIClient:
     def __init__(self, model: str = None):
-        
-        api_key = os.getenv("OPENAI_API_KEY")
+        key = 'none'
+        api_key = os.getenv("OPENAI_API_KEY",key)
         if not api_key:
             raise ValueError("OPENAI_API_KEY not set in environment.")
         openai.api_key = api_key
