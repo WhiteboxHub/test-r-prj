@@ -1,0 +1,74 @@
+{
+  "demographics": {
+    "age": {
+      "30-39": 0.15,
+      "40-49": 0.25,
+      "50-59": 0.35,
+      "60+": 0.25
+    },
+    "gender": {
+      "male": 0.65,
+      "female": 0.35
+    },
+    "state_distribution": {
+      "CA": 0.12,
+      "TX": 0.08,
+      "NY": 0.07,
+      "FL": 0.06,
+      "other": 0.67
+    },
+    "practice_setting": {
+      "academic": 0.35,
+      "community": 0.55,
+      "other": 0.10
+    }
+  },
+  "practice_context": {
+    "urban_vs_rural": {
+      "urban": 0.80,
+      "rural": 0.20
+    },
+    "patient_mix": {
+      "medicare": 0.55,
+      "medicaid": 0.15,
+      "commercial": 0.30
+    },
+    "copd_patient_volume": {
+      "low": 0.20,
+      "medium": 0.50,
+      "high": 0.30
+    }
+  },
+  "treatment_patterns": {
+    "guideline_adherence": {
+      "strict": 0.40,
+      "moderate": 0.40,
+      "low": 0.20
+    },
+    "preferred_initial_therapy": {
+      "LAMA": 0.30,
+      "LABA": 0.20,
+      "LAMA+LABA": 0.35,
+      "ICS+LABA": 0.15
+    },
+    "biologic_adoption": {
+      "early_adopter": 0.10,
+      "mainstream": 0.30,
+      "late_or_never": 0.60
+    }
+  },
+  "variation_drivers": {
+    "generation": {
+      "younger (<45)": "higher adoption of biologics, digital tools",
+      "older (≥45)": "slower adoption, more pragmatic prescribing"
+    },
+    "academic_vs_community": {
+      "academic": "higher GOLD adherence, trial participation",
+      "community": "resource-constrained, pragmatic adjustments"
+    },
+    "urban_vs_rural": {
+      "urban": "access to rehab, biologics",
+      "rural": "limited rehab, more ICS use"
+    }
+  }
+}
