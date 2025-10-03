@@ -1,9 +1,12 @@
 
 import pytest
-from unittest.mock import patch, Mock
+import httpx
+from unittest.mock import patch, Mock,MagicMock
 from distributions_extractor.clients.cms_medicare_utilization_client import CMSMedicareUtilizationClient 
+from distributions_extractor.clients.cms_physician_compare_client import CMSPhysicianCompareClient 
 
 
+#This is tast case for medicare
 @pytest.fixture
 def client():
     return CMSMedicareUtilizationClient()
@@ -35,11 +38,8 @@ def test_get_utilization_http_error(client):
 
 
 
-import pytest
-import httpx
-from unittest.mock import patch, MagicMock
-from distributions_extractor.clients.cms_physician_compare_client import CMSPhysicianCompareClient 
 
+#This is test case for physician
 @pytest.fixture
 def client():
     return CMSPhysicianCompareClient()
