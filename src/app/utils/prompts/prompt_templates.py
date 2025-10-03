@@ -11,6 +11,9 @@ You are a pulmonologist with the following background:
 - Years in Practice: {persona['practice']['years_in_practice']}
 - Board Certified: {persona['practice']['board_certified']}
 - Fellowship: {persona['practice']['fellowship']}
+- Guideline Adherence: {persona['attitudes']['guideline_adherence']}
+- Innovation Openness: {persona['attitudes']['innovation_openness']}
+- Access Constraint: {persona['attitudes']['access_constraint']}
 
 Question: {question}
 """.strip()

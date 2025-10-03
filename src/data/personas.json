@@ -2,125 +2,105 @@
   {
     "persona_id": "pulm_0001",
     "demographics": {
-      "gender": "male",
-      "age_band": "55-64",
-      "state": "TX",
-      "urbanicity": "suburban"
+      "gender": "female",
+      "age_band": "35-44",
+      "state": "Other",
+      "urbanicity": "urban"
     },
     "practice": {
       "setting": "academic",
-      "years_in_practice": 3,
+      "years_in_practice": 19,
       "board_certified": true,
       "fellowship": "Pulmonary & Critical Care"
     },
     "attitudes": {
-      "guideline_adherence": 0.73,
-      "innovation_openness": 0.71,
-      "access_constraint": 0.35
+      "guideline_adherence": 0.75,
+      "innovation_openness": 0.94,
+      "access_constraint": 0.18
     }
   },
   {
     "persona_id": "pulm_0002",
     "demographics": {
       "gender": "male",
-      "age_band": "55-64",
+      "age_band": "45-54",
       "state": "Other",
-      "urbanicity": "suburban"
+      "urbanicity": "urban"
     },
     "practice": {
-      "setting": "academic",
-      "years_in_practice": 8,
-      "board_certified": false,
+      "setting": "private",
+      "years_in_practice": 39,
+      "board_certified": true,
       "fellowship": "Pulmonary & Critical Care"
     },
     "attitudes": {
-      "guideline_adherence": 0.95,
-      "innovation_openness": 0.6,
-      "access_constraint": 0.3
+      "guideline_adherence": 0.66,
+      "innovation_openness": 0.66,
+      "access_constraint": 0.19
     }
   },
   {
     "persona_id": "pulm_0003",
     "demographics": {
       "gender": "male",
-      "age_band": "45-54",
-      "state": "CA",
+      "age_band": "55-64",
+      "state": "Other",
       "urbanicity": "urban"
     },
     "practice": {
-      "setting": "community",
-      "years_in_practice": 5,
+      "setting": "academic",
+      "years_in_practice": 13,
       "board_certified": true,
       "fellowship": "Pulmonary & Critical Care"
     },
     "attitudes": {
-      "guideline_adherence": 0.78,
-      "innovation_openness": 0.79,
-      "access_constraint": 0.22
+      "guideline_adherence": 0.75,
+      "innovation_openness": 0.81,
+      "access_constraint": 0.13
     }
   },
   {
     "persona_id": "pulm_0004",
     "demographics": {
-      "gender": "male",
-      "age_band": "25-34",
-      "state": "CA",
+      "gender": "female",
+      "age_band": "55-64",
+      "state": "Other",
       "urbanicity": "urban"
     },
     "practice": {
-      "setting": "community",
-      "years_in_practice": 11,
+      "setting": "academic",
+      "years_in_practice": 15,
       "board_certified": true,
       "fellowship": "Pulmonary & Critical Care"
     },
     "attitudes": {
-      "guideline_adherence": 0.66,
-      "innovation_openness": 0.68,
-      "access_constraint": 0.13
+      "guideline_adherence": 0.76,
+      "innovation_openness": 0.66,
+      "access_constraint": 0.12
     }
   },
   {
     "persona_id": "pulm_0005",
     "demographics": {
-      "gender": "male",
-      "age_band": "45-54",
-      "state": "OH",
+      "gender": "female",
+      "age_band": "35-44",
+      "state": "Other",
       "urbanicity": "urban"
     },
     "practice": {
       "setting": "academic",
-      "years_in_practice": 31,
-      "board_certified": true,
+      "years_in_practice": 32,
+      "board_certified": false,
       "fellowship": "Pulmonary & Critical Care"
     },
     "attitudes": {
-      "guideline_adherence": 0.9,
-      "innovation_openness": 0.7,
-      "access_constraint": 0.23
+      "guideline_adherence": 0.78,
+      "innovation_openness": 0.89,
+      "access_constraint": 0.39
     }
   },
   {
     "persona_id": "pulm_0006",
-    "demographics": {
-      "gender": "male",
-      "age_band": "45-54",
-      "state": "CA",
-      "urbanicity": "urban"
-    },
-    "practice": {
-      "setting": "academic",
-      "years_in_practice": 39,
-      "board_certified": true,
-      "fellowship": "Pulmonary & Critical Care"
-    },
-    "attitudes": {
-      "guideline_adherence": 0.87,
-      "innovation_openness": 0.89,
-      "access_constraint": 0.14
-    }
-  },
-  {
-    "persona_id": "pulm_0007",
     "demographics": {
       "gender": "male",
       "age_band": "55-64",
@@ -128,35 +108,55 @@
       "urbanicity": "urban"
     },
     "practice": {
-      "setting": "community",
-      "years_in_practice": 13,
+      "setting": "academic",
+      "years_in_practice": 20,
       "board_certified": true,
       "fellowship": "Pulmonary & Critical Care"
     },
     "attitudes": {
-      "guideline_adherence": 0.78,
-      "innovation_openness": 0.56,
-      "access_constraint": 0.13
+      "guideline_adherence": 0.84,
+      "innovation_openness": 0.89,
+      "access_constraint": 0.17
+    }
+  },
+  {
+    "persona_id": "pulm_0007",
+    "demographics": {
+      "gender": "female",
+      "age_band": "55-64",
+      "state": "FL",
+      "urbanicity": "urban"
+    },
+    "practice": {
+      "setting": "community",
+      "years_in_practice": 14,
+      "board_certified": true,
+      "fellowship": "Pulmonary & Critical Care"
+    },
+    "attitudes": {
+      "guideline_adherence": 0.85,
+      "innovation_openness": 0.69,
+      "access_constraint": 0.36
     }
   },
   {
     "persona_id": "pulm_0008",
     "demographics": {
-      "gender": "female",
-      "age_band": "25-34",
-      "state": "TX",
+      "gender": "male",
+      "age_band": "35-44",
+      "state": "FL",
       "urbanicity": "urban"
     },
     "practice": {
       "setting": "community",
-      "years_in_practice": 28,
+      "years_in_practice": 40,
       "board_certified": true,
       "fellowship": "Pulmonary & Critical Care"
     },
     "attitudes": {
-      "guideline_adherence": 0.6,
-      "innovation_openness": 0.46,
-      "access_constraint": 0.28
+      "guideline_adherence": 0.59,
+      "innovation_openness": 0.74,
+      "access_constraint": 0.39
     }
   },
   {
@@ -164,46 +164,46 @@
     "demographics": {
       "gender": "male",
       "age_band": "45-54",
-      "state": "Other",
-      "urbanicity": "urban"
+      "state": "PA",
+      "urbanicity": "rural"
     },
     "practice": {
       "setting": "academic",
-      "years_in_practice": 32,
+      "years_in_practice": 14,
       "board_certified": true,
       "fellowship": "Pulmonary & Critical Care"
     },
     "attitudes": {
-      "guideline_adherence": 0.89,
-      "innovation_openness": 0.74,
-      "access_constraint": 0.28
+      "guideline_adherence": 0.72,
+      "innovation_openness": 0.82,
+      "access_constraint": 0.7
     }
   },
   {
     "persona_id": "pulm_0010",
     "demographics": {
-      "gender": "female",
-      "age_band": "35-44",
-      "state": "TX",
+      "gender": "male",
+      "age_band": "55-64",
+      "state": "CA",
       "urbanicity": "urban"
     },
     "practice": {
       "setting": "academic",
-      "years_in_practice": 29,
+      "years_in_practice": 34,
       "board_certified": true,
       "fellowship": "Pulmonary & Critical Care"
     },
     "attitudes": {
-      "guideline_adherence": 0.79,
-      "innovation_openness": 0.77,
-      "access_constraint": 0.33
+      "guideline_adherence": 0.86,
+      "innovation_openness": 0.9,
+      "access_constraint": 0.39
     }
   },
   {
     "persona_id": "pulm_0011",
     "demographics": {
       "gender": "female",
-      "age_band": "35-44",
+      "age_band": "55-64",
       "state": "Other",
       "urbanicity": "urban"
     },
@@ -214,76 +214,136 @@
       "fellowship": "Pulmonary & Critical Care"
     },
     "attitudes": {
-      "guideline_adherence": 0.73,
-      "innovation_openness": 0.71,
-      "access_constraint": 0.35
+      "guideline_adherence": 0.8,
+      "innovation_openness": 0.78,
+      "access_constraint": 0.17
     }
   },
   {
     "persona_id": "pulm_0012",
     "demographics": {
-      "gender": "female",
-      "age_band": "55-64",
-      "state": "Other",
+      "gender": "male",
+      "age_band": "25-34",
+      "state": "TX",
       "urbanicity": "suburban"
     },
     "practice": {
       "setting": "community",
-      "years_in_practice": 16,
+      "years_in_practice": 28,
       "board_certified": true,
       "fellowship": "Pulmonary & Critical Care"
     },
     "attitudes": {
-      "guideline_adherence": 0.78,
-      "innovation_openness": 0.5,
-      "access_constraint": 0.26
+      "guideline_adherence": 0.75,
+      "innovation_openness": 0.51,
+      "access_constraint": 0.22
     }
   },
   {
     "persona_id": "pulm_0013",
     "demographics": {
-      "gender": "female",
+      "gender": "male",
       "age_band": "35-44",
-      "state": "TX",
-      "urbanicity": "urban"
+      "state": "GA",
+      "urbanicity": "suburban"
     },
     "practice": {
       "setting": "academic",
-      "years_in_practice": 23,
+      "years_in_practice": 0,
       "board_certified": true,
       "fellowship": "Pulmonary & Critical Care"
     },
     "attitudes": {
-      "guideline_adherence": 0.81,
-      "innovation_openness": 0.63,
-      "access_constraint": 0.34
+      "guideline_adherence": 0.8,
+      "innovation_openness": 0.87,
+      "access_constraint": 0.36
     }
   },
   {
     "persona_id": "pulm_0014",
     "demographics": {
       "gender": "male",
-      "age_band": "35-44",
-      "state": "TX",
+      "age_band": "55-64",
+      "state": "Other",
       "urbanicity": "urban"
     },
     "practice": {
-      "setting": "academic",
-      "years_in_practice": 40,
+      "setting": "community",
+      "years_in_practice": 21,
       "board_certified": true,
       "fellowship": "Pulmonary & Critical Care"
     },
     "attitudes": {
-      "guideline_adherence": 0.9,
-      "innovation_openness": 0.76,
-      "access_constraint": 0.14
+      "guideline_adherence": 0.73,
+      "innovation_openness": 0.67,
+      "access_constraint": 0.19
     }
   },
   {
     "persona_id": "pulm_0015",
     "demographics": {
       "gender": "male",
-      "age_band": "65+",
+      "age_band": "35-44",
+      "state": "CA",
+      "urbanicity": "rural"
+    },
+    "practice": {
+      "setting": "academic",
+      "years_in_practice": 2,
+      "board_certified": true,
+      "fellowship": "Pulmonary & Critical Care"
+    },
+    "attitudes": {
+      "guideline_adherence": 0.75,
+      "innovation_openness": 0.63,
+      "access_constraint": 0.5
+    }
+  },
+  {
+    "persona_id": "pulm_0016",
+    "demographics": {
+      "gender": "female",
+      "age_band": "45-54",
+      "state": "Other",
+      "urbanicity": "urban"
+    },
+    "practice": {
+      "setting": "community",
+      "years_in_practice": 7,
+      "board_certified": true,
+      "fellowship": "Pulmonary & Critical Care"
+    },
+    "attitudes": {
+      "guideline_adherence": 0.75,
+      "innovation_openness": 0.59,
+      "access_constraint": 0.22
+    }
+  },
+  {
+    "persona_id": "pulm_0017",
+    "demographics": {
+      "gender": "female",
+      "age_band": "35-44",
+      "state": "FL",
+      "urbanicity": "urban"
+    },
+    "practice": {
+      "setting": "private",
+      "years_in_practice": 23,
+      "board_certified": true,
+      "fellowship": "Pulmonary & Critical Care"
+    },
+    "attitudes": {
+      "guideline_adherence": 0.72,
+      "innovation_openness": 0.57,
+      "access_constraint": 0.13
+    }
+  },
+  {
+    "persona_id": "pulm_0018",
+    "demographics": {
+      "gender": "male",
+      "age_band": "35-44",
       "state": "FL",
       "urbanicity": "suburban"
     },
@@ -294,38 +354,18 @@
       "fellowship": "Pulmonary & Critical Care"
     },
     "attitudes": {
-      "guideline_adherence": 0.68,
-      "innovation_openness": 0.63,
-      "access_constraint": 0.32
+      "guideline_adherence": 0.72,
+      "innovation_openness": 0.51,
+      "access_constraint": 0.49
     }
   },
   {
-    "persona_id": "pulm_0016",
+    "persona_id": "pulm_0019",
     "demographics": {
       "gender": "male",
       "age_band": "65+",
-      "state": "Other",
+      "state": "MI",
       "urbanicity": "suburban"
-    },
-    "practice": {
-      "setting": "community",
-      "years_in_practice": 26,
-      "board_certified": true,
-      "fellowship": "Pulmonary & Critical Care"
-    },
-    "attitudes": {
-      "guideline_adherence": 0.7,
-      "innovation_openness": 0.46,
-      "access_constraint": 0.26
-    }
-  },
-  {
-    "persona_id": "pulm_0017",
-    "demographics": {
-      "gender": "female",
-      "age_band": "65+",
-      "state": "NY",
-      "urbanicity": "urban"
     },
     "practice": {
       "setting": "academic",
@@ -334,49 +374,9 @@
       "fellowship": "Pulmonary & Critical Care"
     },
     "attitudes": {
-      "guideline_adherence": 0.74,
-      "innovation_openness": 0.75,
-      "access_constraint": 0.34
-    }
-  },
-  {
-    "persona_id": "pulm_0018",
-    "demographics": {
-      "gender": "female",
-      "age_band": "45-54",
-      "state": "Other",
-      "urbanicity": "rural"
-    },
-    "practice": {
-      "setting": "community",
-      "years_in_practice": 30,
-      "board_certified": true,
-      "fellowship": "Pulmonary & Critical Care"
-    },
-    "attitudes": {
-      "guideline_adherence": 0.6,
-      "innovation_openness": 0.77,
-      "access_constraint": 0.57
-    }
-  },
-  {
-    "persona_id": "pulm_0019",
-    "demographics": {
-      "gender": "male",
-      "age_band": "45-54",
-      "state": "Other",
-      "urbanicity": "urban"
-    },
-    "practice": {
-      "setting": "academic",
-      "years_in_practice": 22,
-      "board_certified": true,
-      "fellowship": "Pulmonary & Critical Care"
-    },
-    "attitudes": {
-      "guideline_adherence": 0.72,
-      "innovation_openness": 0.62,
-      "access_constraint": 0.21
+      "guideline_adherence": 0.93,
+      "innovation_openness": 0.92,
+      "access_constraint": 0.39
     }
   },
   {
@@ -384,19 +384,19 @@
     "demographics": {
       "gender": "male",
       "age_band": "55-64",
-      "state": "MI",
+      "state": "IL",
       "urbanicity": "urban"
     },
     "practice": {
-      "setting": "private",
+      "setting": "community",
       "years_in_practice": 7,
       "board_certified": false,
       "fellowship": "Pulmonary & Critical Care"
     },
     "attitudes": {
-      "guideline_adherence": 0.77,
-      "innovation_openness": 0.4,
-      "access_constraint": 0.29
+      "guideline_adherence": 0.65,
+      "innovation_openness": 0.77,
+      "access_constraint": 0.25
     }
   }
 ]
