@@ -19,3 +19,4 @@ class OpenAIClient:
             max_tokens=512,
         )
         return resp.choices[0].message["content"].strip()
+    

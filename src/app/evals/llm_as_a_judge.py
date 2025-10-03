@@ -1,6 +1,6 @@
 import torch
 from bert_score import score
-from app.utils.llms.openai import OpenAIClient
+from utils.llms.openai import OpenAIClient
 
 async def judge_with_openai(persona: dict, response: str) -> str:
     """Ask OpenAI if the response reflects persona traits."""

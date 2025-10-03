@@ -15,12 +15,6 @@ DISTRIBUTION_FILE = BASE_DIR / "distributions_extractor" / "sample_distributions
 # Ensure data directory exists
 DATA_DIR.mkdir(parents=True, exist_ok=True)
 
-# Load or generate personas
-# if not PERSONAS_FILE.exists():
-#     print("⚠️ personas.json not found. Generating now...")
-#     # generator = PersonaGenerator(DISTRIBUTION_FILE)
-#     # generator.save_personas(PERSONAS_FILE, n=20)
-#     print(f"✅ Generated personas.json at {PERSONAS_FILE}")
 
 with open(PERSONAS_FILE, "r") as f:
     PERSONAS = json.load(f)
