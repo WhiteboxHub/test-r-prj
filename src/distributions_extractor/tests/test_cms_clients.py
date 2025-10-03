@@ -2,8 +2,8 @@
 import pytest
 import httpx
 from unittest.mock import patch, Mock,MagicMock
-from distributions_extractor.clients.cms_medicare_utilization_client import CMSMedicareUtilizationClient 
-from distributions_extractor.clients.cms_physician_compare_client import CMSPhysicianCompareClient 
+from src.distributions_extractor.clients.cms_medicare_utilization_client import CMSMedicareUtilizationClient 
+from src.distributions_extractor.clients.cms_physician_compare_client import CMSPhysicianCompareClient 
 
 
 #This is tast case for medicare
