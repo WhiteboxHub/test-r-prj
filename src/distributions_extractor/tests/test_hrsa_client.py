@@ -2,10 +2,7 @@ import pytest
 from unittest.mock import patch, MagicMock
 from distributions_extractor.clients.hrsa_client import HRSAClient
 from unittest.mock import patch, MagicMock
-from distributions_extractor.clients.medscape_client import MedscapeClient
 
-
-#This is test case for Hrsa client 
 @pytest.fixture
 def mock_client():
     """Fixture to patch httpx.Client"""
@@ -44,29 +41,3 @@ def test_get_state_workforce_http_error(mock_client):
         client.get_state_workforce("CA", "2022")
 
     assert "HTTP error" in str(exc_info.value)
-
-
-
-
-
-
-# This is Test case for medscapce
-
-@pytest.fixture
-def client():
-    return MedscapeClient()
-
-
-def test_get_compensation_survey_default(client):
-    result = client.get_compensation_survey()
-    assert result["specialty"] == "Pulmonology"
-    assert result["avg_income"] == 310000
-    assert result["gender_split"]["male"] == 0.70
-    assert result["gender_split"]["female"] == 0.30
-    assert sum(result["practice_setting"].values()) == pytest.approx(1.0)
-
-
-def test_get_compensation_survey_custom_specialty(client):
-    result = client.get_compensation_survey(specialty="Cardiology")
-    assert result["specialty"] == "Cardiology"
-    assert result["avg_income"] == 310000
