@@ -106,6 +106,4 @@ class PersonaGenerator:
         print(f"{len(personas)} personas saved to {output_file}")
 
 
-# Usage example:
-# generator = PersonaGenerator("population_distributions.json")
-# generator.save_personas("person.json", n=50)
+

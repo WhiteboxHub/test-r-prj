@@ -9,7 +9,7 @@ from persona_generator.prompt_templates import build_persona_prompt
 
 
 def run_persona_generation(state: str = "CA"):
-    # Build distributions
+    
     nppes = NPPESClient()
     cms = CMSPhysicianCompareClient()
     hrsa = HRSAClient()
@@ -18,20 +18,20 @@ def run_persona_generation(state: str = "CA"):
     builder = PulmonologistDistributionBuilder(nppes, cms, hrsa, medscape)
     distribution = builder.build_distribution(state=state)
 
-    base_dir = Path(__file__).parent.parent  # points to src
+    base_dir = Path(__file__).parent.parent 
     distribution_file = base_dir / "distributions_extractor" / "sample_distributions.json"
     output_personas_file = base_dir / "data" / "personas.json"
 
-    # Initialize generator
+  
     generator = PersonaGenerator(distribution_file)
 
-    # Generate and save 20 personas
+  
     generator.save_personas(output_personas_file, n=20)
 
-    # Load generated personas
+
     personas = generator.generate_personas(n=20)
 
-    # Example: build a prompt for the first persona
+  
     sample_prompt = build_persona_prompt(
         personas[0],
         "What is your typical first-line therapy for newly diagnosed moderate COPD?"

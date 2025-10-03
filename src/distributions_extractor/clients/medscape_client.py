@@ -4,11 +4,11 @@ from typing import Dict, Any, Optional
 
 class MedscapeClient:
     def __init__(self):
-        # No public API; either scrape or maintain as static dataset
+      
         pass
 
     def get_compensation_survey(self, specialty: str = "Pulmonology") -> Dict[str, Any]:
-        # Static JSON or scraped data
+      
         return {
             "specialty": specialty,
             "avg_income": 310000,

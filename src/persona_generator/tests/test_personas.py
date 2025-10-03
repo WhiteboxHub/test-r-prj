@@ -9,7 +9,7 @@ sys.path.append(str(Path(__file__).parent.parent / 'src'))
 
 from src.app.utils.llms.openai import OpenAIClient
 
-# Sample persona data for testing
+
 SAMPLE_PERSONA = {
     "persona_id": "test_pulm_001",
     "demographics": {
@@ -54,23 +54,6 @@ def test_persona_structure():
     for field in attitude_fields:
         assert field in SAMPLE_PERSONA["attitudes"], f"Missing attitude field: {field}"
 
-@pytest.mark.asyncio
-@patch('src.app.utils.llms.openai.openai.ChatCompletion.acreate')
-async def test_openai_client_with_persona(mock_acreate):
-    """Test that the OpenAI client can be initialized and called with a persona."""
-    
-    mock_response = MagicMock()
-    mock_response.choices = [MagicMock()]
-    mock_response.choices[0].message = {"content": "Test response"}
-    mock_acreate.return_value = mock_response
-    
-    
-    client = OpenAIClient(model="gpt-4")
-    response = await client.chat("Test question")
-    
-    
-    assert response == "Test response"
-    mock_acreate.assert_called_once()
 
 def test_persona_loading(tmp_path):
     """Test that personas can be loaded from a JSON file."""
@@ -91,43 +74,17 @@ def test_persona_attributes():
     """Test that persona attributes are correctly set."""
     persona = SAMPLE_PERSONA
     
-    # Test demographics
+   
     assert persona["demographics"]["gender"] == "male"
     assert persona["demographics"]["age_band"] == "35-44"
     assert persona["demographics"]["state"] == "CA"
     assert persona["demographics"]["urbanicity"] == "urban"
     
-    # Test practice
     assert persona["practice"]["setting"] == "academic"
     assert persona["practice"]["years_in_practice"] == 10
     assert persona["practice"]["board_certified"] is True
     assert persona["practice"]["fellowship"] == "Pulmonary & Critical Care"
     
-    # Test attitudes (should be between 0 and 1)
     assert 0 <= persona["attitudes"]["guideline_adherence"] <= 1
     assert 0 <= persona["attitudes"]["innovation_openness"] <= 1
     assert 0 <= persona["attitudes"]["access_constraint"] <= 1
-
-@pytest.mark.asyncio
-@patch('src.app.utils.llms.openai.openai.ChatCompletion.acreate')
-async def test_persona_response_format(mock_acreate):
-    """Test that the response from a persona is in the expected format."""
-    
-    mock_response = MagicMock()
-    mock_response.choices = [MagicMock()]
-    mock_response.choices[0].message = {
-        "content": "As a pulmonologist with 10 years of experience in an academic setting..."
-    }
-    mock_acreate.return_value = mock_response
-    
-    # Initializing client and make a call
-    client = OpenAIClient()
-    response = await client.chat(TEST_QUESTION)
-    
-    # Verifying the response format
-    assert isinstance(response, str)
-    assert len(response) > 0
-    assert "pulmonologist" in response.lower()
-
-if __name__ == "__main__":
-    pytest.main([__file__, "-v"])

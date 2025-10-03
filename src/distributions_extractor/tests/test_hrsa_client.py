@@ -11,7 +11,7 @@ def mock_client():
         yield mock_instance
 
 def test_get_state_workforce_success(mock_client):
-    # Mock the JSON response
+
     mock_response = MagicMock()
     mock_response.json.return_value = [{"state": "NY", "year": "2022", "workforce_count": 1234}]
     mock_response.raise_for_status.return_value = None
@@ -20,17 +20,16 @@ def test_get_state_workforce_success(mock_client):
     client = HRSAClient()
     result = client.get_state_workforce("NY", "2022")
 
-    # Check that httpx.Client.get was called with correct params
     mock_client.get.assert_called_once_with(
         "https://data.hrsa.gov/resource/ahrf.json",
         params={"state": "NY", "year": "2022"}
     )
 
-    # Check the returned data
+
     assert result == [{"state": "NY", "year": "2022", "workforce_count": 1234}]
 
 def test_get_state_workforce_http_error(mock_client):
-    # Simulate an HTTP error
+
     mock_response = MagicMock()
     mock_response.raise_for_status.side_effect = Exception("HTTP error")
     mock_client.get.return_value = mock_response
